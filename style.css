@@ -1,0 +1,16 @@
+body { margin: 0; overflow: hidden; background-color: #1a1a1a; font-family: sans-serif; }
+.fullscreen-container { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; background: #282c34; flex-direction: column; padding: 20px; box-sizing: border-box; }
+.fullscreen-container h1 { color: white; margin-bottom: 30px; text-align: center; }
+.fullscreen-container button { padding: 15px 35px; font-size: 20px; color: white; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s; margin: 10px; width: 80%; max-width: 320px; }
+#single-player-btn { background-color: #007BFF; } #single-player-btn:hover { background-color: #0069D9; }
+#multiplayer-btn { background-color: #28a745; } #multiplayer-btn:hover { background-color: #218838; }
+#lobby-container input { padding: 12px; margin-bottom: 15px; width: 80%; max-width: 300px; border-radius: 8px; border: 2px solid #ddd; font-size: 16px; }
+#join-button { background-color: #4CAF50; }
+#mode-selection-container { display: flex; }
+#lobby-container, #game-container { display: none; }
+#game-container { width: 100vw; height: 100vh; position: relative; }
+#gameCanvas { background-color: #70483c; display: block; width: 100%; height: 100%; }
+.joystick-container { position: absolute; bottom: 50px; width: 120px; height: 120px; background: rgba(0, 0, 0, 0.3); border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+#move-joystick { left: 50px; } #fire-joystick { right: 50px; }
+.joystick-knob { width: 60px; height: 60px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; }
+#ui-container { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 10; width: 90%; color: white; text-align: center; }
